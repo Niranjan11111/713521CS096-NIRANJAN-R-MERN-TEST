@@ -1,0 +1,175 @@
+/* about.css */
+
+/* Reset some default browser styles */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body style */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navbar styling */
+.navbar {
+    background: #1777e4;
+    color: #fff;
+    padding: 1rem;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar ul li {
+    margin-left: 1rem;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.navbar ul li a:hover {
+    /* background: #555; */
+    border-radius: 5px;
+}
+
+/* Vision and Mission styling */
+.visionNmision {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.vision, .mision {
+    flex: 1 1 45%;
+    padding: 1rem;
+    margin: 1rem;
+    background: #f4f4f4;
+    border-radius: 10px;
+}
+
+.vision h1, .mision h1 {
+    margin-bottom: 1rem;
+}
+
+.vision p, .mision p {
+    line-height: 1.6;
+}
+
+/* About cards styling */
+.about-box {
+    padding: 2rem;
+}
+
+.about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-cards .card-1, .about-cards .card-last {
+    flex: 1 1 30%;
+    height: 250px;
+    margin: 1rem;
+    background: #e2e2e2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.about-cards .card-1 img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.card-text {
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.about-cards .card-last {
+    flex: 1 1 100%;
+    background-color: #c86bfa;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: left;
+    color: aliceblue;
+    font-size: 22px;
+}
+
+/* Footer styling */
+footer {
+    background: #1777e4;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-content p {
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links li {
+    margin: 0 0.5rem;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .vision, .mision {
+        flex: 1 1 100%;
+    }
+
+    .about-cards .card-1, .about-cards .card-last {
+        flex: 1 1 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-cards .card-1 img {
+        margin-bottom: 10px;
+    }
+
+    .card-text {
+        margin-left: 0;
+    }
+}

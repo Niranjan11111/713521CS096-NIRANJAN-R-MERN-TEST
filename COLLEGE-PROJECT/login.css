@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e2e1ec;
+}
+.container {
+    border: 2px solid #03045e;
+    width: 100%;
+    max-width: 400px;
+    background-color: #fafeff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(172, 10, 10, 0.1);
+    text-align: center;
+}
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #000000;
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color: #000000;
+}
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.submit-btn, .login-btn, .switch-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    background-color: #00b4d8;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.submit-btn:hover, .login-btn:hover, .switch-btn:hover {
+    background-color: #0077b6;
+}
+.switch-btn {
+    background-color: #103fcf;
+}
+.switch-btn:hover {
+    background-color: #3557ff;
+}
+.section {
+    display: none;
+}
+.active {
+    
+    display: block;
+}
